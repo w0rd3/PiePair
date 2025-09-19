@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Diamond Harmony: Ring Selection Experience</title>
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <header>
+ <h1>Diamond Harmony</h1>
+ <p>An Elegant Journey to the Perfect Engagement Ring and Wedding Band</p>
+ </header>
+ 
+ <main>
+ <section id="intro">
+ <p>Welcome to Diamond Harmony, a sophisticated selection tool modeled after an eye exam to help you find the ideal diamond, engagement ring, and wedding band. There are two individual tests—for the proposer and the recipient—followed by a collaborative round.</p>
+ <p>Note: The wedding band is restricted to plain gold with no engravings or designs.</p>
+ <button onclick="startTest('him')">Start Test for Him</button>
+ <button onclick="startTest('her')">Start Test for Her</button>
+ <button onclick="startCombined()">Start Combined Round</button>
+ </section>
+ 
+ <section id="test-him" class="test-section hidden">
+ <h2>Test for Him</h2>
+ <div id="charts-him"></div>
+ <button onclick="submitIndividual('him')">Submit Preferences</button>
+ </section>
+ 
+ <section id="test-her" class="test-section hidden">
+ <h2>Test for Her</h2>
+ <div id="charts-her"></div>
+ <button onclick="submitIndividual('her')">Submit Preferences</button>
+ </section>
+ 
+ <section id="combined" class="hidden">
+ <h2>Combined Refinement</h2>
+ <div id="joint-charts"></div>
+ <button onclick="finalizeSelection()">Finalize Selection</button>
+ </section>
+ 
+ <section id="results" class="hidden">
+ <h2>Your Perfect Selection</h2>
+ <div id="final-prescription"></div>
+ <button onclick="resetApp()">Start Over</button>
+ </section>
+ </main>
+ 
+ <footer>
+ <p>© 2025 Diamond Harmony. Crafted with elegance.</p>
+ </footer>
+ 
+ <script src="script.js"></script>
+</body>
+</html>

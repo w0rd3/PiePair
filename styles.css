@@ -1,0 +1,113 @@
+body {
+ font-family: 'Lato', sans-serif;
+ background-color: #f8f5f1;
+ color: #333;
+ margin: 0;
+ padding: 0;
+ line-height: 1.6;
+}
+
+header {
+ background-color: #d4af37;
+ color: #fff;
+ text-align: center;
+ padding: 2rem;
+ font-family: 'Playfair Display', serif;
+}
+
+h1 {
+ font-size: 2.5rem;
+ margin: 0;
+}
+
+h2 {
+ font-family: 'Playfair Display', serif;
+ color: #d4af37;
+}
+
+main {
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 2rem;
+}
+
+section {
+ margin-bottom: 2rem;
+ background: #fff;
+ padding: 1.5rem;
+ border-radius: 8px;
+ box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+button {
+ background-color: #d4af37;
+ color: #fff;
+ border: none;
+ padding: 0.75rem 1.5rem;
+ font-size: 1rem;
+ cursor: pointer;
+ border-radius: 4px;
+ transition: background-color 0.3s;
+}
+
+button:hover {
+ background-color: #b8952e;
+}
+
+.hidden {
+ display: none;
+}
+
+.chart {
+ margin-bottom: 1.5rem;
+}
+
+.chart h3 {
+ margin-bottom: 1rem;
+}
+
+.chart img {
+ max-width: 100%;
+ height: auto;
+ margin-bottom: 1rem;
+ border-radius: 4px;
+ box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.pair {
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 0.5rem;
+}
+
+.pair div {
+ display: flex;
+ align-items: center;
+}
+
+.pair svg {
+ width: 50px;
+ height: 50px;
+ margin-right: 10px;
+ border: 1px solid #d4af37;
+ border-radius: 4px;
+ padding: 5px;
+ background: #fff;
+}
+
+.pair button {
+ width: 45%; /* Adjusted for SVG */
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+footer {
+ text-align: center;
+ padding: 1rem;
+ background-color: #d4af37;
+ color: #fff;
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+}
